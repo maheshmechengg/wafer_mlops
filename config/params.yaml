@@ -1,0 +1,22 @@
+base:
+  project: Wafer-Quality-Project
+  random_state: 42
+  target_col: OutPut
+
+
+data_source:
+  batch_files: Training_Batch_Files
+
+
+data_preparation:
+  training_db: Training.db
+  training_db_dri: Training_Database
+  schema_training: config/schema_training.json
+  good_validation_raw_dir: data/Training_Raw_files_validated/Good_raw
+  bad_validation_raw_dir: data/Training_Raw_files_validated/Bad_raw
+  TrainingArchiveBadData: data/TrainingArchiveBadData
+  Training_FileFromDB: data/Training_FileFromDB
+  master_csv: master.csv
+
+pre_data_preparation:
+  prediction_db: Prediction.db
